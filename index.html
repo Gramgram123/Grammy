@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <title>เค้าขอโทษ ._.</title>
+          
+        
+    </head> 
+    <body>
+
+
+        <div class="container">
+            <div >
+                <h2 class = "header_text">ดีกันได้ม่าย เค้าจะไม่ทำตัวเปนเด่กน้อยแล้ว</h2>
+                <h1 class = "h1">เค้าขอโทษสำหรับทุกๆเรื่องที่เค้าทำเค้าก็รู้ตัวแหละว่าเค้าทำตัวแบบไหนเค้าจะทำตัวให้โตขึ้นแล้วก็เค้าจะไม่บอกเลิกกับเธอเวลาทะเลาะกันแล้วครับดีกันได้ม่ายเค้ายังอยากมีเธออยู่อะแบบว่าแม่เค้าซื้อขนมไอเหี้ยนั่นให้เค้าทุกวันเลยเพราะเห็นเค้าซื้อวันนั้นมั้งแล้วแบบแม่เลยซื้อให้ทุกวันเลยแล้วแบบเห็นขนมเนี่ยนั่นแล้วหน้าเธอลอยมาตลอดเลย เค้าไม่รู้นะว่าเธอคิดไงกับเค้ากันแน่แต่กลับมาเหอะเค้าอยุไม่ได้และ pls แต่ถ้าสมมุติว่าเธอมีคนอื่นแล้ว ไม่อะไม่สมมุติไม่มีได้ม่าย เอาเป็นว่าถ้าเธอมีคนอื่นแล้วก็โชคดีกับรักครั้งใหม่นะครับ แต่อย่าพึ่งมีเลยได้ไหมเค้าทำใจไม่ได้อะ TwT ตอนแรกเค้าจะทำครบรอบ 1m แบบดีๆให้ สงสัยคงไม่ได้ทำและเสียดายเนอะ กลับมาให้เค้าทำตอน 2m ได้ป่าว </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+                
+            </div>
+            
+
+
+
+            
+            <div class = "buttons">
+                
+
+                <button class="btn" id = "yesButton" onclick="nextPage()">ได้</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">ไม่ได้</button>
+                
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+    </body> 
+</html>
